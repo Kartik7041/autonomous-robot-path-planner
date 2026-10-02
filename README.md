@@ -62,6 +62,6 @@ In a physical robot, information from sensors or cameras could be used to constr
 
 ## Demo
 
-Live demo:
+Live demo:https://kartik7041.github.io/autonomous-robot-path-planner/
 
 [Open the Robot Path Planner](YOUR_GITHUB_PAGES_LINK)
