@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Autonomous Robot Path Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🤖 Autonomous Robot Path Planner</h1>
+        <p>Simulating autonomous navigation using the A* pathfinding algorithm</p>
+    </header>
+
+    <main>
+
+        <section class="controls">
+
+            <button id="startBtn">Set Start</button>
+            <button id="goalBtn">Set Goal</button>
+            <button id="obstacleBtn">Draw Obstacles</button>
+
+            <button id="runBtn">▶ Run A*</button>
+            <button id="clearBtn">Clear</button>
+            <button id="mazeBtn">Generate Maze</button>
+
+        </section>
+
+        <section class="simulation">
+
+            <div id="grid"></div>
+
+            <div class="info">
+
+                <h2>Simulation</h2>
+
+                <div class="stat">
+                    <span>Algorithm</span>
+                    <strong>A*</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Path Length</span>
+                    <strong id="pathLength">-</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Nodes Explored</span>
+                    <strong id="nodesExplored">-</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Status</span>
+                    <strong id="status">Ready</strong>
+                </div>
+
+                <div class="legend">
+
+                    <div>
+                        <span class="legendBox start"></span>
+                        Start
+                    </div>
+
+                    <div>
+                        <span class="legendBox goal"></span>
+                        Goal
+                    </div>
+
+                    <div>
+                        <span class="legendBox wall"></span>
+                        Obstacle
+                    </div>
+
+                    <div>
+                        <span class="legendBox path"></span>
+                        Path
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Built as a robotics software simulation using JavaScript & A*
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
